@@ -25,6 +25,7 @@ Steps of the software development process:
     passed into the method or what might be outputted from the method. You shouldn’t
     be coding exactly to these examples, but rather, be flexible to handle any data of 
     that data type.
+
 Whiteboard Challenges
 1. Given an array of integers, return indices of the two numbers such that they 
     add up to a specific target. You may assume that each input would 
@@ -82,4 +83,36 @@ appropriate position in the alphabet and returns the string
     as a double. 
         a. Use case: If given 17, return 0.01408 (1/71)
         
+'''
+
+
+# 1. Need more clarification-------------------------
+
+# 2. Already did this problem on another worksheet-----
+
+
+# 3. Determine if a list increases incrementally -----------
+
+'''
+Create a list of numbers
+
+1. Function that sorts the numbers (list of numbers)
+    return list of numbers.sort()
+
+2. Function that  subtracts the previous number (1. Function)
+    Increment = list [-1] - list [-2]
+    return Increment
+
+3. Function that verifies the increment (1. Function, 2. Function)
+    get the length of the array/list with range(len(list of nums))
+    position = 1
+        while positon <= lenght of list:
+            if list [positon] - list [position -1] != 2. Function increment:
+                print (bool(0))
+            else:
+                position += 1
+        else :
+            print (bool(1))
+
+Function to order the numbers in list (List of numbers)
 '''
