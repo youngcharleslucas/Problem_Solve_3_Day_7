@@ -115,4 +115,31 @@ Create a list of numbers
             print (bool(1))
 
 Function to order the numbers in list (List of numbers)
+
 '''
+
+Number_list = [7,3,5,1,2,9,8,6,10,4]
+
+def Sort_numbers (Numbers_list):
+    Numbers_list.sort()
+    return Numbers_list
+
+def Increment (sorted_numbers):
+    increment = sorted_numbers[-1] - sorted_numbers[-2]
+    return increment
+
+def List_increment (sorted_numbers, incremnt):
+    list_length = len(sorted_numbers)
+    position = 1
+    while position <= list_length-1:
+        if sorted_numbers[position] - sorted_numbers[position - 1] != incremnt:
+            print(bool(0))
+            break
+        else:
+            position += 1
+    else: 
+        print (bool(1))
+
+sorted = Sort_numbers(Number_list)
+increment = Increment(sorted)
+List_increment(sorted, increment)
