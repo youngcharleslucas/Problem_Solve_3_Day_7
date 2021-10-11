@@ -143,3 +143,39 @@ def List_increment (sorted_numbers, incremnt):
 sorted = Sort_numbers(Number_list)
 increment = Increment(sorted)
 List_increment(sorted, increment)
+
+# 4.---------------------------------
+"""
+4. Create a method that takes an array of positive and negative numbers. 
+    Return an array where the first element is the count of the positive numbers 
+    and the second element is the sum of negative numbers. 
+        a. Use case: [7, 9, -3, -32, 107, -1, 36, 95, -14, -99, 21]
+
+
+create the array
+
+1. Function that counts positive numbers( array ):
+    count_positive = 0
+    for number in array:
+        if number > 0 :
+            count +=1
+        else:
+            pass
+    return count_positive
+
+2. Function adding negative numbers( array):
+    total_negative = 0
+    for number in array:
+        if number in array < 0 :
+            total +=number
+        else:
+            pass
+    return total_negative
+
+3. Function create the array for count and sum ( array)
+    new_array with results
+    new_array.append 1. Function(array)
+    new_array.append 2. Function(array)
+    Print new_array
+
+"""
