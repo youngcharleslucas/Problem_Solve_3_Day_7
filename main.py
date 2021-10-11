@@ -210,3 +210,68 @@ def Count_and_sum (array):
     {countsum}''')
 
 Count_and_sum(the_array)
+
+# 5. --------------------------------------------------------------------------
+'''
+5. Create a method that accepts a string of space separated numbers and 
+    returns the highest and lowest number as a string
+        a. Use case: “3 9 0 1 4 8 10 2” ==> “0 10”
+
+create a string of spaced numbers
+
+1. Function that finds the lowest number (numbers):
+    Lowest number = 0
+    for number in numbers:
+        if number < Lowest number:
+            Lowest number = number
+        else:
+            pass
+    return: Lowest number
+
+2. Function that finds the highest number (numbers):
+    Highest number = 0
+    for number in numbers:
+        if number > Highest number:
+            Highest number = number
+        else: 
+            pass
+    return Highest number
+
+3. Function that places high/low in a string (numbers):
+    highlow = []
+    highlow.append(1.Function(numbers))
+    highlow.append(2.Function(numbers))
+    print(string words)
+
+call function 3
+'''
+highlow_numbers = [3, 9, 0, 1, 4, 8, 10, 2]
+
+def Lowest_number (numbers):
+    lowest_number = 0
+    for number in numbers:
+        if number < lowest_number:
+            lowest_number = number
+        else:
+            pass
+    return lowest_number
+
+def Highest_number (numbers):
+    highest_number = 0
+    for number in numbers:
+        if number > highest_number:
+            highest_number = number
+        else:
+            pass
+    return highest_number
+
+def High_and_low (numbers):
+    highlow = []
+    highlow.append(Lowest_number(numbers))
+    highlow.append(Highest_number(numbers))
+    print(f'''
+    In the array {numbers}, 
+    these are the lowest and highest numbers
+    {highlow}''' )
+
+High_and_low(highlow_numbers)
