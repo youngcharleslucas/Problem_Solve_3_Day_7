@@ -179,3 +179,34 @@ create the array
     Print new_array
 
 """
+the_array = [7, 9, -3, -32, 107, -1, 36, 95, -14, -99, 21]
+
+def Positive_count (array):
+    count = 0
+    for numbers in array:
+        if numbers > 0:
+            count += 1
+        else:
+            pass
+    return count
+
+def Sum_negative (array):
+    total_negative = 0
+    for number in array:
+        if number < 0:
+            total_negative += number
+        else:
+            pass
+    return total_negative
+
+
+def Count_and_sum (array):
+    countsum = []
+    countsum.append(Positive_count(array))
+    countsum.append(Sum_negative(array))
+    print(f'''
+    In the list {array}, the first number in this new list 
+    represents the amount of positive numbers and the second represents the sum of negative numbers.
+    {countsum}''')
+
+Count_and_sum(the_array)
